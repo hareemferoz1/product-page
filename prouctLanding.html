@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Kirang+Haerang" rel="stylesheet">
+    <link rel="stylesheet" href="productLanding.css">
+
+    <title>Vivid tickets</title>
+</head>
+
+
+<body>
+    <header id="header">
+        <div class="title">
+            <i class="fas fa-cannabis"></i> Vivid tickets
+        </div>
+        <div id="header-img">
+            <img src="musicaltheatre.jpg" alt="Snow" style="width:100%;">
+
+            <div class="book">
+                <button id="submitBook" type="submit">Book Now  <i class="fas fa-arrow-alt-circle-right" class="arrowIcon"></i></button>
+            </div>
+            <div class="bottom-right">
+                <nav id="nav-bar">
+                    <span>
+                        <a class="nav-link" href="#best-deals">Best Deals</a>
+                    </span>
+                    <span>
+                        <a class="nav-link" href="#what-new">What's new?</a>
+                    </span>
+                    <span>
+                        <a class="nav-link" href="#popular">Most Popular</a>
+                    </span>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="best-deals">
+        <h1>Best Deals</h1>
+        <div class="slider">
+            <h5 class="slider-text">Young Frankenstein</h5>
+            <img class="mySlides" src="youngFrankenstein.jpg">
+            <h5 class="slider-text">One For The Road</h5>
+            <img class="mySlides" src="oneForTheRoad.jpg">
+            <h5 class="slider-text">Bat Out Of Hell Musical</h5>
+            <img class="mySlides" src="batOutOfHellMusical.jpg">
+
+
+
+            <button class="buttonLeft" onclick="plusDivs(-1)">&#10094; </button>
+            <button class="buttonRight" onclick="plusDivs(+1)">&#10095;</button>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var y = document.getElementsByClassName("slider-text");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length };
+                for (i = 0; i < x.length; i++) {
+                    y[i].style.display = "none";
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+                y[slideIndex - 1].style.display = "block";
+            }
+        </script>
+    </div>
+
+    <div id="what-new">
+        <h1>What's New</h1>
+        <div class="slider">
+            
+            <h5 class="slider-text1">Thunderbirds</h5>
+            <img class="mySlides1" src="tbth_26-06-18-lead_1.jpg">
+            <h5 class="slider-text1">Dreamgirls</h5>
+            <img class="mySlides1" src="dreamgirls.jpg">
+            <h5 class="slider-text1">Importance Earnest</h5>
+            <img class="mySlides1" src="importanceEarnest.jpg">
+
+
+
+            <button class="buttonLeft" onclick="plusDivs1(-1)">&#10094;</button>
+            <button class="buttonRight" onclick="plusDivs1(+1)">&#10095;</button>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showDivs1(slideIndex);
+
+            function plusDivs1(n) {
+                showDivs1(slideIndex += n);
+            }
+
+            function showDivs1(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides1");
+                var y = document.getElementsByClassName("slider-text1");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length };
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                    y[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+                y[slideIndex - 1].style.display = "block";
+            }
+        </script>
+    </div>
+
+    <div id="popular">
+        <h1>Most Popular</h1>
+        <div class="flex-container">
+            <div class="text-container">
+                <h5 class="flex-heading">The Lion King</h5>
+                <img class="flexImg" src="LionKing.jpg">
+                <div class="bottom-right1">
+                    From
+                    <strong>£39.00</strong>
+                    <button id="flex-submit" type="submit">
+                        <a href="#" target="_blank">Find Tickets</a>
+                        <i class="fas fa-arrow-alt-circle-right" class="arrowIcon"></i>
+                    </button>
+                </div>
+
+            </div>
+            <div class="text-container">
+                <h5 class="flex-heading">The Fox Finder</h5>
+                <img class="flexImg" src="foxfinder.jpg">
+                <div class="bottom-right1">From
+                    <strong>£30.00</strong>
+                    <button id="flex-submit" type="submit">
+                        <a  href="#" target="_blank">Find Tickets</a>
+                        <i class="fas fa-arrow-alt-circle-right" class="arrowIcon"></i>
+                    </button>
+                </div>
+
+            </div>
+            <div class="text-container">
+                <h5 class="flex-heading">Come From Away</h5>
+                <img class="flexImg" src="comeFromAway.jpg">
+                <div class="bottom-right1">From
+                    <strong>£25.00</strong>
+                    <button id="flex-submit" type="submit">
+                        <a  href="#" target="_blank">Find Tickets</a>
+                        <i class="fas fa-arrow-alt-circle-right" class="arrowIcon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="text-container">
+                <h5 class="flex-heading">Misty</h5>
+                <img class="flexImg" src="misty.jpg">
+                <div class="bottom-right1">From
+                    <strong>£35.00</strong>
+                    <button id="flex-submit" type="submit">
+                        <a  href="#" target="_blank">Find Tickets</a>
+                        <i class="fas fa-arrow-alt-circle-right" class="arrowIcon"></i>
+                    </button>
+                </div>
+            </div>
+
+
+
+            <h1 class="please" style="margin: 50px 90px;">The award winning show</h1>  
+            <div class="video">
+                        
+                <iframe  src="https://youtu.be/q-bni4QqSv4">
+                </iframe>
+                <div id="inbox">
+                        <h3>Get the best deals sent to your inbox</h3>
+                        <h5>Sign up to our mailing list to receive exclusive offers, new show ticket alerts and seasonal promotions.
+                            You can unsubscribe at any time by following the instructions in the footer of every email we send. </h5>
+                        <form id="form">
+        
+                            <div class="asked">
+                                <div class="asked">
+                                    <label for="email" id="email-label">
+                                        <h4 id="address">Email Address</h4>
+                                    </label>
+                                </div>
+                                <div class="answer">
+                                    <input type="text" id="email" name="Email Adress" placeholder=" jhon_smith@example.com" required="">
+                                </div>
+                                <button id="submit" type="submit">
+                                    <a id="submitText" href="https://www.freecodecamp.com/email-submit" target="_blank">Submit</a>
+                                </button>
+        
+                        </form>
+                        </div>
+            </div>
+
+            
+</body>
+</html>

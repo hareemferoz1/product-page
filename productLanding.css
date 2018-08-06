@@ -1,0 +1,545 @@
+body{
+    background-color: #e0e0e0;
+}
+h1{
+    font-size: 60px;
+}
+.title {
+        width: 100%;
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 35px;
+        margin: 15px auto;
+        border: 1px solid black;
+        border-radius: 5px;
+        
+        
+    }
+
+    #header-img {
+        position: relative;
+        text-align: center;
+        color: white;
+        opacity: 0.8;
+
+    }
+
+    #submitBook {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid #3e2d2e;
+        border-radius: 8px;
+        background-color: #ffee58;
+        color:#3e2d2e;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 10px 50px;
+    }
+
+    #submitBook:hover{
+        background-color: #c9bc1f;
+    }
+    nav span{
+        margin: 10px;
+    }
+    .nav-link{
+        color:white;
+        font-size: 25px;
+        text-decoration: none;
+        
+        
+    }
+
+    .nav-link:hover{
+        opacity: 0.7;
+        color: #ffee58;
+    }
+
+    .bottom-right {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+
+    }
+    
+    #best-deals,#what-new,#popular,#inbox{
+        text-align: center;
+        width: 100%;
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 35px;
+        margin: 15px auto;
+        border: 1px solid black;
+        border-radius: 5px;
+        
+    }
+    .slider,.slider1{
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+
+    }
+
+    #what-new,#inbox{
+        background-color: #e0e0e0;
+        color: black;
+    }
+
+    #inbox{
+        padding: 0px 200px;
+        margin: 15px 80px;
+        width: 50%;
+        
+    }
+    .video{
+        padding: 0px 20px;
+        margin: 15px 80px;
+        width: 50%;
+}
+
+    
+
+    iframe{
+        width: 800px;
+        height: 400px;
+        width: 170%;
+    }
+
+    #address{
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 35px;
+        margin: 15px auto;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 75%;
+    }
+
+    #email{
+        width: 90%;
+        height: 30px;
+    }
+
+    #submit{
+        border: 2px solid black;
+        border-radius: 8px;
+        background-color: black;
+        padding: 5px 50px;
+        margin: 10px auto;
+    }
+    #submitText{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    #submit:hover{
+        background-color: #3e2d2e;
+    }
+/*
+    .buttonLeft,.buttonRight{
+        border: 2px solid black;
+        margin: 0px 20px;
+        
+    }
+    .buttonLeft1,.buttonRight1{
+        border: 2px solid #EB886E;
+        margin: 0px 20px;
+        
+    }
+
+    */
+    
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: black;
+        flex-direction: row;
+        margin: 0px 350px;
+        
+        
+      }
+
+      .flexImg {
+        height: 350px;
+        margin: 25px 0px;
+        width: 85%;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        
+      }
+      .text-container {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    
+    .bottom-right1 {
+        position: absolute;
+        bottom: 20px;
+        right: 40px;
+        border: 1px solid black;
+        background-color: black;
+        padding: 2px;
+        margin: 0;
+        font-size: 25px;
+        
+    }
+    .flex-heading{
+        margin: 0;
+        text-decoration: none;
+    }
+
+    #flex-submit{
+        padding: 10px 25px;
+        border: 1px solid dodgerblue;
+        background-color: dodgerblue;
+        border-radius: 5px;
+        font-size: 15px;
+
+    }
+
+    #flex-submit a{
+        color: white;
+    }
+
+
+    .mySlides,.mySlides1{
+        margin-bottom: 15px;
+    }
+    
+    .slider-text{
+        margin: 13px;
+    }
+
+
+    @media only screen and (max-width: 1550px) {
+    
+    .slider{
+        margin: 0px 420px;
+    }
+    
+    #inbox{
+        padding: 0px 200px;
+        margin: 15px 50px;
+        width: 50%;
+        
+    }
+    .video{
+        padding: 0px 20px;
+        margin: 15px 50px;
+        width: 50%;
+}
+}
+
+@media only screen and (max-width: 1500px) {
+    
+    .slider{
+        margin: 0px 400px;
+    }
+    #inbox{
+        padding: 0px 200px;
+        margin: 15px 20px;
+        width: 50%;
+        
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    
+    .slider{
+        margin: 0px 380px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    
+    .slider{
+        margin: 0px 360px;
+    }
+}
+@media only screen and (max-width: 1350px) {
+    
+    .slider{
+        margin: 0px 330px;
+    }
+
+    #submitBook{
+        padding: 8px 40px;
+        font-size: 19px;
+        border-radius: 8px;
+        
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    
+    .slider{
+        margin: 0px 310px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    
+    .slider{
+        margin: 0px 290px;
+    }
+    .mySlides,.mySlides1{
+        width: 650px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    
+    .slider{
+        margin: 0px 270px;
+    }
+}
+@media only screen and (max-width: 1150px) {
+    
+    .slider{
+        margin: 0px 250px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    
+    .slider{
+        margin: 0px 230px;
+    }
+}
+@media only screen and (max-width: 1050px) {
+    
+    .slider{
+        margin: 0px 200px;
+    }
+}
+    
+    @media only screen and (max-width: 1000px) {
+        h1{
+            font-size: 55px;
+    
+    }
+    .nav-link{
+        font-size: 20px;
+    }
+    
+    #submitBook{
+        padding: 7px 30px;
+        font-size: 18px;
+        border-radius: 8px;
+        
+    }
+    .slider{
+        margin: 0px 180px;
+    }
+    .mySlides,.mySlides1{
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    
+    .slider{
+        margin: 0px 160px;
+    }
+    
+}
+@media only screen and (max-width: 900px) {
+    
+    .slider{
+        margin: 0px 125px;
+    }
+    
+}
+
+@media only screen and (max-width: 850px) {
+    
+    .slider{
+        margin: 0px 95px;
+    }
+    
+}
+
+@media only screen and (max-width: 800px) {
+    h1{
+        font-size: 50px;
+
+}
+.nav-link{
+    font-size: 18px;
+}
+#submitBook{
+    padding: 6px 25px;
+    font-size: 17px;
+    border-radius: 8px;
+    top: 60%;
+}
+.mySlides,.mySlides1{
+    width: 550px;
+}
+.slider{
+    margin: 0px 110px;
+}
+
+}
+@media only screen and (max-width: 750px) {
+    
+    .slider{
+        margin: 0px 90px;
+        
+    }
+    
+}
+@media only screen and (max-width: 700px) {
+    
+    .slider{
+        margin: 0px 100px;
+    }
+     
+    .mySlides,.mySlides1{
+        width: 500px;
+    }
+    
+}
+@media only screen and (max-width: 650px) {
+    
+    .slider{
+        margin: 0px 70px;
+        
+    }
+    
+}
+
+   
+
+    @media only screen and (max-width: 600px) {
+        h1{
+            font-size: 45px;
+    
+    }
+    .nav-link{
+        font-size: 15px;
+    }
+    #submitBook{
+        padding: 5px 22px;
+        font-size: 15px;
+        border-radius: 8px;
+        top: 60%;
+    }
+    .slider{
+        margin: 0px 70px;
+    }
+     
+    .mySlides,.mySlides1{
+        width: 450px;
+    }
+    
+}
+@media only screen and (max-width: 550px) {
+    
+    .slider{
+        margin: 0px 40px;
+        
+    }
+    
+}
+@media only screen and (max-width: 530px) {
+    
+    .slider{
+        margin: 0px 25px;
+        
+    }
+    
+}
+@media only screen and (max-width: 500px) {
+    
+    .slider{
+        margin: 0px 40px;
+        
+    }
+
+    .mySlides{
+        width: 400px;
+    }
+    
+}
+@media only screen and (max-width: 480px) {
+    
+    .slider{
+        margin: 0px 35px;
+        
+    }
+    .mySlides,.mySlides1{
+        width: 380px;
+    }
+    
+    
+}
+@media only screen and (max-width: 450px) {
+    
+    .slider{
+        margin: 0px 35px;
+        
+    }
+    .mySlides,.mySlides1{
+        width: 350px;
+    }
+    
+    
+}
+
+    @media only screen and (max-width: 400px) {
+        h1{
+            font-size: 40px;
+    
+    }
+    .nav-link{
+        font-size: 12px;
+    }
+    #submitBook{
+        padding: 4px 10px;
+        font-size: 13px;
+        border-radius: 5px;
+        top: 55%;
+    }
+    .slider{
+        margin: 0px 25px;
+        
+    }
+    .mySlides,.mySlides1{
+        width: 310px;
+    }
+}
+@media only screen and (max-width: 370px) {
+    
+    .slider{
+        margin: 0px 35px;
+        
+    }
+    .mySlides,.mySlides1{
+        width: 280px;
+    }
+    
+    
+}
+@media only screen and (max-width: 350px) {
+    
+    .slider{
+        margin: 0px 35px;
+        
+    }
+    .mySlides,.mySlides1{
+        width: 240px;
+    }
+    
+    
+}
+
+    
